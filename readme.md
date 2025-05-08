@@ -45,6 +45,21 @@ az account set --subscription <subscription_id>
 - Preserves existing user information (email, first name, last name)
 
 ## Usage
+1. Create and activate a virtual environment:
+```bash
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# Linux/macOS
+python -m venv .venv
+source .venv/bin/activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 Run the script using:
 ```bash
@@ -61,10 +76,3 @@ python update_and_send_passwords.py
 
 The script uses Azure SDK's built-in error handling. Ensure all environment variables are properly set before running.
 
-## Contributing
-
-Feel free to submit issues and enhancement requests.
-
-## License
-
-This project is proprietary and confidential.
